@@ -28,7 +28,7 @@ class NotificaitonCard extends StatelessWidget {
                     child: Image(
                         height: 50,
                         width: Get.width,
-                        fit: BoxFit.fill,
+                        fit: BoxFit.fitWidth,
                         image: NetworkImage(
                             'https://images.unsplash.com/photo-1512310604669-443f26c35f52?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80')),
                   ),
