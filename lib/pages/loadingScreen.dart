@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:loading/indicator/ball_pulse_indicator.dart';
+import 'package:loading/loading.dart';
 import 'package:login/utils/colors.dart';
 
 class LoadingScreen extends StatelessWidget {
@@ -12,11 +14,15 @@ class LoadingScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              child: Icon(
-                Icons.check,
+              color: Colors.lightBlue,
+              child: Center(
+                child: Loading(
+                    indicator: BallPulseIndicator(),
+                    size: 50.0,
+                    color: AppColor.primaryGrey)
+                    ,
               ),
-              decoration: BoxDecoration(),
-            ),
+            )
           ],
         ),
       ),

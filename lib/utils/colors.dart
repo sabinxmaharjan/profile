@@ -7,4 +7,6 @@ class AppColor {
   static final Color primaryRed = Color(0xffD62828);
   static final Color primaryGrey = Color(0xff808080);
   static final Color primaryGreen = Color(0xff00FF00);
+  static final Color primaryMaroon = Color(0xff800000);
+  static final Color dirtyBlue = Color(0xff003049);
 }

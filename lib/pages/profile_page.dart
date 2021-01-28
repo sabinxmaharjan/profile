@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:login/pages/profile_details.dart';
 import 'package:login/utils/colors.dart';
 import 'package:login/widgets/custom_button.dart';
 
@@ -73,14 +75,36 @@ class ProfilePage extends StatelessWidget {
           Positioned(
               bottom: 75,
               left: 162,
-              child: CustomIconButton(
-                icon: Icons.favorite,
-                iconColor: AppColor.primaryWhite,
-                color: AppColor.primaryRed,
-                borderColor: AppColor.primaryRed,
-                height: 55.03,
-                width: 55.03,
-                iconSize: 34,
+              child: InkWell(
+                onTap: (){
+                  Get.to(ProfileDetails(
+                    age: 28,
+        name: "Suvekchya Shahi",
+        profession: "Doctor",
+        location: "Nepal",
+        status: "Single",
+        community: "Newar",
+        dob: "1992-01-05",
+        edu: "MD",
+        height: 5.5,
+        origin: "Butwal",
+        residing: "USA",
+        siblings: "Two",
+        bio:
+            "Hello my name is Suvechya Shahi. Hello my name is Suvechya ShahiHello my name is Suvechya ShahiHello my name is Suvechya ShahiHello my name is Suvechya Shahi",
+        networkImage: NetworkImage(
+            'https://images.unsplash.com/photo-1512310604669-443f26c35f52?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80'),
+                  ));
+                },
+                child: CustomIconButton(
+                  icon: Icons.favorite,
+                  iconColor: AppColor.primaryWhite,
+                  color: AppColor.primaryRed,
+                  borderColor: AppColor.primaryRed,
+                  height: 55.03,
+                  width: 55.03,
+                  iconSize: 34,
+                ),
               )),
           Positioned(
               bottom: 75,
